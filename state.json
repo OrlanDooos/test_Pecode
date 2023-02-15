@@ -1,0 +1,398 @@
+{
+  "cookies": [
+    {
+      "name": "ab_language",
+      "value": "new",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": 1708019693.825477,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "slang",
+      "value": "ua",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": 1711043693.825555,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "uid",
+      "value": "Cgo9D2PtHG4SRTufY7oLAg==",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": 1679075693.825573,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "mBTxsHhNLCVT9QCjQ8q5pmLJLqi5_ugYSsbp7Ubp7ig-1676483694-0-AQhsvXv7vaDJcTz5iik2IMZjnhFI4MglZlS9qSMoRjkXfkxNpFqnsqFOvfsZ8ce/1D3VELGT5tQf+mrBmHAHBMw=",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": 1676485493.825615,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ab-catalog-filters-index",
+      "value": "on",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "cart-modal",
+      "value": "open-modal",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "fit-size",
+      "value": "old",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ab-auto-portal",
+      "value": "old",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "promo-horizontal-filters",
+      "value": "verticalFilters",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ab-catalog-tile-description",
+      "value": "old",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ab-catalog-filter-result-quantity",
+      "value": "old",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ab-kt-action",
+      "value": "promotions",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "social-auth",
+      "value": "old",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "xab_tests",
+      "value": "%7B%22ab-catalog-filters-index%22%3A%22on%22%2C%22ab-catalog-backend%22%3A%22old%22%2C%22cart-modal%22%3A%22open-modal%22%2C%22fit-size%22%3A%22old%22%2C%22ab-auto-portal%22%3A%22old%22%2C%22filter-tabs%22%3A%22old%22%2C%22ab-catalog-delivery-terms%22%3A%22old%22%2C%22ab-catalog-selection-filters%22%3A%22old%22%2C%22promo-horizontal-filters%22%3A%22verticalFilters%22%2C%22ab-catalog-tile-description%22%3A%22old%22%2C%22ab-catalog-filter-result-quantity%22%3A%22old%22%2C%22ab-kt-action%22%3A%22promotions%22%2C%22fingerprint%22%3A%22off%22%2C%22skip-add-phone%22%3A%22off%22%2C%22social-auth%22%3A%22old%22%7D",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "xab_segment",
+      "value": "94",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": 1711043694.012279,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "xl_uid",
+      "value": "Cgo8CWPtHG44FTQdG9RIAg==",
+      "domain": "rozetka.com.ua",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "visitor_city",
+      "value": "11632",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": 1708019694,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gcl_au",
+      "value": "1.1.1061275703.1676483695",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": 1684259694,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__utmz_gtm",
+      "value": "utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": 1692208494,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_uss-csrf",
+      "value": "tN1wMPXWThmvUlFA6uWiSNIbnOQzjP7QezsFgI6dwHKhHdbw",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": 1708019694.651547,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ussat_exp",
+      "value": "1676526895",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": 1676526894.651582,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ussajwt",
+      "value": "eyJhbGciOiJSUzI1NiIsImtpZCI6InVzc2F0LnYwIiwidHlwIjoiSldUIn0.eyJkZXRhaWxzIjoiMWM2MDVlOTNkY2NjYTQ5ZmZjODk0YTEyMjMyMWMxZGEzN2FkODQ2ZmUwNDI3NzFlNGY5NDJkMzUwOGU1MmM5MDg2ZjlmYTJiOTVjNmUwYWExN2NjYzQxYjc1MjA2YmMzZTc4MjFmOGEzYTdiMGRlY2JkYzkyZTA0MmUwN2VjMDU4MjgxODllMDgzZmQxOGNhOGIzNGQzZmYyODJmNTgyMGRmM2UxZmY0YWNiYjU5ZDNhMzk5NzZkMGIzM2E4MmJlYzZhZDdhNzZmNjBjMmQ0NTk3Njk5ZWI5ZTExY2ZmZDU3ZDRjMTllMmFkOGE3YWNmMDFiMDRlZjUzYWRlYzQ4ZSIsImV4cCI6IjE2NzY1MjY4OTUiLCJ1c3NhdCI6IjNjOTRmMDY2NWI0MzQ1NzNiOWFlZjkwZjM3NmU2NTdlLnVhLTAyOGM4YTUzOGEwNjMwYmU2N2JjMThlODJkMWE5NDAyLjE2NzY1MjY4OTUifQ.xfGR1GKLQtIhYTPYFYiJYNpbx8FzD5QS4lNKeaeER_i1oyPbbJXGdocw3fOHrAwEBUFe_J2p6v-kIyaQ4L3oYJt8miXLGJvOKoN_HMG0jsWLifHwTK40pRt5OKqxm33BfVsCpVRT25Y2Lf4CZeGCa6zhubrE2NGCQtGKIBIL3Qw1JXpJGyvldhLBz6oJdPaD0hxwPI5l1jRiNK-_rW4yH1Xijp6gIkQLm0SON4Lpe0uMAxkcRMRzebLr6KSAdJjIJdwQRiPHu0Joks4iRmm_gN5DKjZr52xx_zS4zGYzzZdVIchzRM9oFP0i3SQyj0kU93KQ_k8OI4yErnjPibQPBw",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": 1676526894.651596,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ussat",
+      "value": "3c94f0665b434573b9aef90f376e657e.ua-028c8a538a0630be67bc18e82d1a9402.1676526895",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": 1676526894.651617,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ussrt",
+      "value": "5e1ee3418e88052bb012e6ee280ec2f0.ua-028c8a538a0630be67bc18e82d1a9402.1679075695",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": 1679075694.651629,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ussapp",
+      "value": "BUEechVJ6UaHjjM7eas8gV6wndR4QmZR4fh2fw0F",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": 1711043694.651641,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.3.1350802175.1676483695",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": 1711043695.744119,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gid",
+      "value": "GA1.3.1185158139.1676483695",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": 1676570095,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "vid",
+      "value": "1631962760376951",
+      "domain": ".trafmag.com",
+      "path": "/",
+      "expires": 1711043695.779043,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ts",
+      "value": "1676483695",
+      "domain": ".creativecdn.com",
+      "path": "/",
+      "expires": 1708019694.792637,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "afclid",
+      "value": "24573797801676483695",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": 1708019695.77678,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "partner_uid",
+      "value": "24573797801676483695",
+      "domain": ".afl.rozetka.com.ua",
+      "path": "/",
+      "expires": 1711043695.776804,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "shopping_session",
+      "value": "1",
+      "domain": ".afl.rozetka.com.ua",
+      "path": "/",
+      "expires": 1676484294.765112,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_fbp",
+      "value": "fb.2.1676483694779.1892983392",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": 1684259695,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "u",
+      "value": "kaUThqXV5dMlUZHO25jh",
+      "domain": ".creativecdn.com",
+      "path": "/",
+      "expires": 1708019694.792617,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_dc_gtm_UA-203518-6",
+      "value": "1",
+      "domain": ".rozetka.com.ua",
+      "path": "/",
+      "expires": 1676483754,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "IDE",
+      "value": "AHWqTUnO5DgnkscBjsVsn1udUDfuOyRxzlhEQgyLxLqwkJ5O-XUsa55l-ILnAxafNIc",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1711043694.87897,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "tmruid",
+      "value": "Cgo9D2PtHG4SRTufY7oLAg",
+      "domain": "afl.rozetka.com.ua",
+      "path": "/",
+      "expires": 1711043695.839408,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://rozetka.com.ua",
+      "localStorage": [
+        {
+          "name": "sessionDate",
+          "value": "1676483695786"
+        },
+        {
+          "name": "session_json",
+          "value": "{\"session\":{\"cart\":{\"purchases\":{},\"cost\":{\"old_price\":0,\"price\":0,\"discount\":0},\"discounts\":[],\"coupons\":[],\"error_messages\":[],\"quantity\":0},\"comparison\":{}},\"sessionSe\":{\"cart\":{\"purchases\":{},\"cost\":{\"old_price\":0,\"price\":0,\"discount\":0},\"discounts\":[],\"coupons\":[],\"error_messages\":[],\"quantity\":0}}}"
+        }
+      ]
+    },
+    {
+      "origin": "https://xl-static.rozetka.com.ua",
+      "localStorage": [
+        {
+          "name": "session_json",
+          "value": "{\"session\":{\"cart\":{\"purchases\":{},\"cost\":{\"old_price\":0,\"price\":0,\"discount\":0},\"discounts\":[],\"coupons\":[],\"error_messages\":[],\"quantity\":0},\"comparison\":{}},\"sessionSe\":{\"cart\":{\"purchases\":{},\"cost\":{\"old_price\":0,\"price\":0,\"discount\":0},\"discounts\":[],\"coupons\":[],\"error_messages\":[],\"quantity\":0}}}"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "test_pecode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright install && npx playwright test --config=playwright.config.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OrlanDooos/test_Pecode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OrlanDooos/test_Pecode/issues"
+  },
+  "homepage": "https://github.com/OrlanDooos/test_Pecode#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.30.0"
+  }
+}
