@@ -7,7 +7,7 @@ test('Failed test, try to search not existed item', async ({ page }) => {
   const productPage = new ProductPage(page);
 
   await test.step('Open marketplace main page. Verify url.', async () => {
-    await page.goto('/', { waitUntil: 'load' });
+    await mainPage.openMainPageUrl();
     await mainPage.checkPageUrl('https://rozetka.com.ua/ua/');
   });
 

@@ -16,6 +16,10 @@ export class MainPage {
     this.searchButton = page.locator('//button[text()=" Знайти "]');
   }
 
+  async openMainPageUrl() {
+    await this.page.goto('/', { waitUntil: 'load' });
+  }
+
   async searchItem(itemName: string) {
     await this.searchInput.fill(itemName);
     await this.searchButton.click();

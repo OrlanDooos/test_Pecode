@@ -3,7 +3,6 @@ import type { PlaywrightTestConfig } from '@playwright/test';
 const config: PlaywrightTestConfig = {
   testDir: './specs',
   timeout: 30 * 1000,
-  globalSetup: require.resolve('./global-setup'),
   expect: {
     timeout: 5000,
   },
