@@ -17,6 +17,7 @@ const config: PlaywrightTestConfig = {
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     headless: true,
+    locale: 'ua-UA',
     viewport: { width: 1440, height: 720 },
     video: 'retain-on-failure',
     storageState: 'state.json',
