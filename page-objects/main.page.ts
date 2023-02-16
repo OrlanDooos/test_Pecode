@@ -1,4 +1,5 @@
 import { expect, Locator, Page } from '@playwright/test';
+import { delay } from '../utils/helpers';
 
 export class MainPage {
   readonly page: Page;
@@ -17,7 +18,9 @@ export class MainPage {
   }
 
   async openMainPageUrl() {
+    await delay(1000);
     await this.page.goto('/', { waitUntil: 'load' });
+    await delay(1000);
    // await this.page.locator('//a[@href="https://rozetka.com.ua/ua/"]').click();
   }
 
