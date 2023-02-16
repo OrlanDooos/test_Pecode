@@ -17,7 +17,7 @@ export class ProductPage {
   }
 
   async verifySDDItemsOnPage() {
-    await delay(1000);
+    await this.namesSSDItems.nth(0).waitFor();
     let countOfItems: number;
     countOfItems = await this.namesSSDItems.count();
     expect(countOfItems).toEqual(60);
