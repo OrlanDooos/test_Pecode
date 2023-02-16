@@ -16,12 +16,10 @@ const config: PlaywrightTestConfig = {
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     headless: true,
-    locale: 'ua-UA',
-    timezoneId: 'Europe/Kiev',
-    geolocation: { longitude: 50.450001, latitude: 30.523333 },
     viewport: { width: 1440, height: 720 },
     video: 'retain-on-failure',
-    userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36',
+    userAgent:
+      'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36',
   },
 };
 

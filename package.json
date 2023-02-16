@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright install && npx playwright test --config=playwright.config.ts",
-    "generateReport": "npx allure generate allure-results -o allure-report --clean"
+    "generateReport": "npx allure generate allure-results -o allure-report --clean",
+    "openReport": "npx allure open"
   },
   "repository": {
     "type": "git",

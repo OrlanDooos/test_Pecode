@@ -82,8 +82,7 @@ export class ProductPage {
   }
 
   async addItemToBasket(positionOfItem: number) {
-    await (await this.buyButton(positionOfItem)).waitFor();
-    await (await this.buyButton(positionOfItem)).click();
     await delay(1000);
+    await (await this.buyButton(positionOfItem)).click();
   }
 }

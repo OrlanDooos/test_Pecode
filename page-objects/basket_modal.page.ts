@@ -49,12 +49,12 @@ export class BasketModal {
     expect(totalPrice).toEqual(firstItemPrice + secondItemPrice);
   }
 
-  async verifyNewTotalPrice(secondItemName: any) {
+  async verifyNewTotalPrice(secondItemPrice: any) {
     await delay(1000);
     let newTotalPrice: any;
-    secondItemName = await this.formatNumber(await this.getItemCost(0));
+    secondItemPrice = await this.formatNumber(await this.getItemCost(0));
     newTotalPrice = await this.formatNumber(await this.totalPrice.innerText());
-    expect(newTotalPrice).toEqual("secondItemName");
+    expect(newTotalPrice).toEqual(secondItemPrice);
   }
 
   async verifyProductName(numOfProduct: number, nameFromProductPage: string) {
