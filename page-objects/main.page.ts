@@ -21,9 +21,9 @@ export class MainPage {
     const url = 'https://rozetka.com.ua/ua/';
     await delay(1000);
     await this.page.goto('/', { waitUntil: 'load' });
-    await delay(1000);
-    if (await this.page.url() !== url) {
+    if (this.page.url() !== url) {
       await this.page.locator('//a[@href="https://rozetka.com.ua/ua/"]').click();
+      await delay(1000);
     }
   }
 
