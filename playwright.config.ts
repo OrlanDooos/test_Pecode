@@ -21,7 +21,6 @@ const config: PlaywrightTestConfig = {
     geolocation: { longitude: 50.450001, latitude: 30.523333 },
     viewport: { width: 1440, height: 720 },
     video: 'retain-on-failure',
-    storageState: 'state.json',
   },
 };
 
