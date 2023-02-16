@@ -16,7 +16,7 @@ const config: PlaywrightTestConfig = {
     baseURL: 'https://rozetka.com.ua/',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
-    headless: false,
+    headless: true,
     viewport: { width: 1440, height: 720 },
     video: 'retain-on-failure',
     storageState: 'state.json',
