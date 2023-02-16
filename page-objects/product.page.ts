@@ -6,6 +6,7 @@ export class ProductPage {
   readonly lowerPriceInput: Locator;
   readonly higherPriceInput: Locator;
   readonly namesSSDItems: Locator;
+  readonly searchByPriceButton: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -14,6 +15,17 @@ export class ProductPage {
     this.namesSSDItems = page.locator(
       '//span[@class="goods-tile__title" and (contains(text(),"GB") or contains(text(),"TB") or contains(text(),"SSD"))]',
     );
+    this.searchByPriceButton = page.locator('//button[@type="submit"]');
+  }
+
+  async productOnPage(index: number) {
+    return this.page.locator('//span[@class="goods-tile__title"]').nth(index);
+  }
+
+  async checkItemName(position: number, itemName: string) {
+    let existedItemName: string;
+    existedItemName = await (await this.productOnPage(position)).innerText();
+    expect(existedItemName).toEqual(itemName);
   }
 
   async verifySDDItemsOnPage() {
@@ -52,7 +64,8 @@ export class ProductPage {
     await delay(1000);
     await this.lowerPriceInput.fill(lowerPrice);
     await this.higherPriceInput.fill(higherPrice);
-    await this.page.locator('//button[@type="submit"]').click();
+    await this.searchByPriceButton.waitFor();
+    await this.searchByPriceButton.click();
   }
 
   async verifyPriceFilter() {
@@ -69,7 +82,8 @@ export class ProductPage {
   }
 
   async addItemToBasket(positionOfItem: number) {
-    await delay(1000);
+    await (await this.buyButton(positionOfItem)).waitFor();
     await (await this.buyButton(positionOfItem)).click();
+    await delay(1000);
   }
 }

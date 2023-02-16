@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/OrlanDooos/test_Pecode#readme",
   "devDependencies": {
-    "@playwright/test": "^1.30.0"
+    "@playwright/test": "^1.30.0",
+    "@testomatio/reporter": "^0.7.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
   }
 }

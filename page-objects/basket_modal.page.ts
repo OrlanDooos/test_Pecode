@@ -44,7 +44,6 @@ export class BasketModal {
     let firstItemPrice: any;
     let secondItemPrice: any;
     totalPrice = await this.formatNumber(await this.totalPrice.innerText());
-    console.log(totalPrice);
     firstItemPrice = await this.formatNumber(await this.getItemCost(0));
     secondItemPrice = await this.formatNumber(await this.getItemCost(1));
     expect(totalPrice).toEqual(firstItemPrice + secondItemPrice);
