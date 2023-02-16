@@ -18,6 +18,7 @@ export class MainPage {
 
   async openMainPageUrl() {
     await this.page.goto('/', { waitUntil: 'load' });
+    await this.page.locator('//span[@class="lang__link lang__link--active ng-star-inserted"]').click();
   }
 
   async searchItem(itemName: string) {
