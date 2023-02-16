@@ -5,11 +5,20 @@ export class MainPage {
   readonly usersDropdownMenu: Locator;
   readonly categoryMenuButton: Locator;
   readonly basketButton: Locator;
+  readonly searchInput: Locator;
+  readonly searchButton: Locator;
 
   constructor(page: Page) {
     this.page = page;
     this.categoryMenuButton = page.locator('//button[@id="fat-menu"]');
     this.basketButton = page.locator('//li[@class="header-actions__item header-actions__item--cart"]');
+    this.searchInput = page.locator('//input[@class="search-form__input ng-untouched ng-pristine ng-valid"]');
+    this.searchButton = page.locator('//button[text()=" Знайти "]');
+  }
+
+  async searchItem(itemName: string) {
+    await this.searchInput.fill(itemName);
+    await this.searchButton.click();
   }
 
   async openBasket() {

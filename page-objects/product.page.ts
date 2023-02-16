@@ -5,11 +5,22 @@ export class ProductPage {
   readonly page: Page;
   readonly lowerPriceInput: Locator;
   readonly higherPriceInput: Locator;
+  readonly namesSSDItems: Locator;
 
   constructor(page: Page) {
     this.page = page;
     this.lowerPriceInput = page.locator('//div[@class="slider-filter__inner"]/input[1]');
     this.higherPriceInput = page.locator('//div[@class="slider-filter__inner"]/input[2]');
+    this.namesSSDItems = page.locator(
+      '//span[@class="goods-tile__title" and (contains(text(),"GB") or contains(text(),"TB") or contains(text(),"SSD"))]',
+    );
+  }
+
+  async verifySDDItemsOnPage() {
+    await delay(1000);
+    let countOfItems: number;
+    countOfItems = await this.namesSSDItems.count();
+    expect(countOfItems).toEqual(60);
   }
 
   async itemPrice(index: number) {
