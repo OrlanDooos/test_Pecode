@@ -10,15 +10,7 @@ const config: PlaywrightTestConfig = {
   fullyParallel: true,
   retries: 0,
   workers: 1,
-  reporter: [
-    ['html', { outputFolder: 'my-report' }],
-    [
-      './node_modules/@testomatio/reporter/lib/adapter/playwright.js',
-      {
-        apiKey: process.env.TESTOMATIO,
-      },
-    ],
-  ],
+  reporter: [['line'], ['allure-playwright']],
   use: {
     actionTimeout: 0,
     baseURL: 'https://rozetka.com.ua/',

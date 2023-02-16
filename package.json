@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright install && npx playwright test --config=playwright.config.ts"
+    "test": "npx playwright install && npx playwright test --config=playwright.config.ts",
+    "generateReport": "npx allure generate allure-results -o allure-report --clean"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,8 @@
   "homepage": "https://github.com/OrlanDooos/test_Pecode#readme",
   "devDependencies": {
     "@playwright/test": "^1.30.0",
-    "@testomatio/reporter": "^0.7.4"
+    "allure-commandline": "^2.21.0",
+    "allure-playwright": "^2.0.0-beta.26"
   },
   "dependencies": {
     "dotenv": "^16.0.3"

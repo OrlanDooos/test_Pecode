@@ -1,6 +1,8 @@
 node_modules/
-package-lock.json
-.env
-test-results/
 state.json
 my-report/
+package-lock.json
+.env
+allure-report/
+allure-results/
+test-results/

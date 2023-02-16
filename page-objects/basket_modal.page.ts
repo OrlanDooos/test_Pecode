@@ -54,7 +54,7 @@ export class BasketModal {
     let newTotalPrice: any;
     secondItemName = await this.formatNumber(await this.getItemCost(0));
     newTotalPrice = await this.formatNumber(await this.totalPrice.innerText());
-    expect(newTotalPrice).toEqual(secondItemName);
+    expect(newTotalPrice).toEqual("secondItemName");
   }
 
   async verifyProductName(numOfProduct: number, nameFromProductPage: string) {
