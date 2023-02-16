@@ -18,10 +18,13 @@ export class MainPage {
   }
 
   async openMainPageUrl() {
+    const url = 'https://rozetka.com.ua/ua/';
     await delay(1000);
     await this.page.goto('/', { waitUntil: 'load' });
     await delay(1000);
-   // await this.page.locator('//a[@href="https://rozetka.com.ua/ua/"]').click();
+    if (await this.page.url() !== url) {
+      await this.page.locator('//a[@href="https://rozetka.com.ua/ua/"]').click();
+    }
   }
 
   async searchItem(itemName: string) {
