@@ -8,7 +8,7 @@ test('Failed test, try to search not existed item', async ({ page }) => {
 
   await test.step('Open marketplace main page. Verify url.', async () => {
     await mainPage.openMainPageUrl();
-    //await mainPage.checkPageUrl('https://rozetka.com.ua/ua/');
+    await mainPage.checkPageUrl('https://rozetka.com.ua/ua/');
   });
 
   await test.step('Search by the item name. Try to search item', async () => {
