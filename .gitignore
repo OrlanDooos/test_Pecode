@@ -2,3 +2,5 @@ node_modules/
 package-lock.json
 .env
 test-results/
+state.json
+my-report/
