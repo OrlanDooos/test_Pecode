@@ -17,7 +17,9 @@ export class BasketModal {
   }
 
   async menuButton(index: number) {
-    return this.page.locator('//button[@class="button button--white button--small popup-menu__toggle popup-menu__toggle--context"]').nth(index);
+    return this.page
+      .locator('//button[@class="button button--white button--small popup-menu__toggle popup-menu__toggle--context"]')
+      .nth(index);
   }
 
   async getItemCost(index: number) {
@@ -29,7 +31,7 @@ export class BasketModal {
   }
 
   async formatNumber(number: any) {
-    return number = Number(await number.replace(/\s+/g, '').slice(0, 4));
+    return (number = Number(await number.replace(/\s+/g, '').slice(0, 4)));
   }
 
   async getTotalPrice() {
@@ -38,19 +40,19 @@ export class BasketModal {
 
   async verifyTotalPrice() {
     await delay(1000);
-    let totalPrice: any
-    let firstItemPrice: any
-    let secondItemPrice: any
+    let totalPrice: any;
+    let firstItemPrice: any;
+    let secondItemPrice: any;
     totalPrice = await this.formatNumber(await this.totalPrice.innerText());
     console.log(totalPrice);
     firstItemPrice = await this.formatNumber(await this.getItemCost(0));
     secondItemPrice = await this.formatNumber(await this.getItemCost(1));
-    expect(totalPrice).toEqual(firstItemPrice+secondItemPrice);
+    expect(totalPrice).toEqual(firstItemPrice + secondItemPrice);
   }
 
   async verifyNewTotalPrice(secondItemName: any) {
     await delay(1000);
-    let newTotalPrice: any
+    let newTotalPrice: any;
     secondItemName = await this.formatNumber(await this.getItemCost(0));
     newTotalPrice = await this.formatNumber(await this.totalPrice.innerText());
     expect(newTotalPrice).toEqual(secondItemName);
@@ -64,12 +66,4 @@ export class BasketModal {
     await (await this.productActionsButton(indexOfItem)).click();
     await this.deleteButton.click();
   }
-
-
-
-
-
-
-
 }
-

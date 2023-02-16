@@ -8,17 +8,16 @@ test('Verify if the price filter work correctly', async ({ page }) => {
 
   await test.step('Open marketplace main page. Verify url.', async () => {
     await page.goto('/', { waitUntil: 'load' });
-    await mainPage.checkPageUrl('https://rozetka.com.ua/ua/')
+    await mainPage.checkPageUrl('https://rozetka.com.ua/ua/');
   });
 
   await test.step('Open subcategory page. Select product. Use some filters, set price. Verify price.', async () => {
     await mainPage.openCategoryMenu();
-    await mainPage.focusOnCategory("Ноутбуки та комп’ютери");
-    await mainPage.selectSubcategoryInMenu("SSD");
-    await productPage.selectProductBrand("Kingston");
-    await productPage.setPrice("1000", "3000");
-    await productPage.selectCapacityOfDisk("480 - 512");
+    await mainPage.focusOnCategory('Ноутбуки та комп’ютери');
+    await mainPage.selectSubcategoryInMenu('SSD');
+    await productPage.selectProductBrand('Kingston');
+    await productPage.setPrice('1000', '3000');
+    await productPage.selectCapacityOfDisk('480 - 512');
     await productPage.verifyPriceFilter();
   });
-
 });

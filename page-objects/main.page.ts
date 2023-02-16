@@ -12,12 +12,12 @@ export class MainPage {
     this.basketButton = page.locator('//li[@class="header-actions__item header-actions__item--cart"]');
   }
 
-  async openBasket(){
+  async openBasket() {
     await this.basketButton.click();
   }
 
   async openCategory(categoryName: string) {
-  await this.page.locator(`//a[text()="${categoryName}"]`).nth(1).click();
+    await this.page.locator(`//a[text()="${categoryName}"]`).nth(1).click();
   }
 
   async selectSubcategoryInList(categoryName: string) {
@@ -29,7 +29,7 @@ export class MainPage {
   }
 
   async selectSubcategoryInMenu(subcategoryName: string) {
-    await this.page.locator (`//a[@class="menu__link" and text()=" ${subcategoryName} "]`).click();
+    await this.page.locator(`//a[@class="menu__link" and text()=" ${subcategoryName} "]`).click();
   }
 
   async checkPageUrl(pageUrl: string) {
@@ -39,7 +39,4 @@ export class MainPage {
   async openCategoryMenu() {
     await this.categoryMenuButton.click();
   }
-
-
 }
-

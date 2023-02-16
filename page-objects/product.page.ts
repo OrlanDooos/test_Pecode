@@ -1,12 +1,10 @@
 import { expect, Locator, Page } from '@playwright/test';
 import { delay } from '../utils/helpers';
 
-
 export class ProductPage {
   readonly page: Page;
   readonly lowerPriceInput: Locator;
   readonly higherPriceInput: Locator;
-
 
   constructor(page: Page) {
     this.page = page;
@@ -31,31 +29,31 @@ export class ProductPage {
   }
 
   async selectProductBrand(brandName: string) {
-    await this.page.locator (`//a[@data-id="${brandName}"]`).click();
+    await this.page.locator(`//a[@data-id="${brandName}"]`).click();
   }
 
   async selectCapacityOfDisk(capacity: string) {
     await delay(1000);
-    await this.page.locator (`//a[@data-id="${capacity} ГБ"]`).click();
+    await this.page.locator(`//a[@data-id="${capacity} ГБ"]`).click();
   }
 
   async setPrice(lowerPrice: string, higherPrice: string) {
     await delay(1000);
     await this.lowerPriceInput.fill(lowerPrice);
     await this.higherPriceInput.fill(higherPrice);
-    await this.page.locator ('//button[@type="submit"]').click();
+    await this.page.locator('//button[@type="submit"]').click();
   }
 
   async verifyPriceFilter() {
     await delay(1000);
     let countOfElements = await this.page.locator('//p[@class="ng-star-inserted"]').count();
-    for(let i = 0; countOfElements !== i;i++) {
-        let notFromatedPrice: any
-        let formatedPrice: number
-        notFromatedPrice = await (await this.itemPrice(i)).innerText();
-        formatedPrice = Number(await notFromatedPrice.replace(/\s+/g, '').slice(0, 4));
-        expect(formatedPrice).toBeGreaterThanOrEqual(1000);
-        expect(formatedPrice).toBeLessThanOrEqual(3000);
+    for (let i = 0; countOfElements !== i; i++) {
+      let notFromatedPrice: any;
+      let formatedPrice: number;
+      notFromatedPrice = await (await this.itemPrice(i)).innerText();
+      formatedPrice = Number(await notFromatedPrice.replace(/\s+/g, '').slice(0, 4));
+      expect(formatedPrice).toBeGreaterThanOrEqual(1000);
+      expect(formatedPrice).toBeLessThanOrEqual(3000);
     }
   }
 
@@ -63,9 +61,4 @@ export class ProductPage {
     await delay(1000);
     await (await this.buyButton(positionOfItem)).click();
   }
-
-
-
-
 }
-
