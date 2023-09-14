@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright install-deps && npx playwright install && npx playwright test --config=playwright.config.ts",
+    "test": "npx playwright install --with-deps chromium && npx playwright install && npx playwright test --config=playwright.config.ts",
     "generateReport": "npx allure generate allure-results -o allure-report --clean",
     "openReport": "npx allure open"
   },
