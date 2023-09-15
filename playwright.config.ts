@@ -2,9 +2,9 @@ import type { PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
   testDir: './specs',
-  timeout: 100 * 1000,
+  timeout: 50 * 1000,
   expect: {
-    timeout: 100000,
+    timeout: 50000,
   },
   fullyParallel: true,
   retries: 0,
@@ -15,7 +15,7 @@ const config: PlaywrightTestConfig = {
     baseURL: 'https://rozetka.com.ua/ua/',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
-    headless: true,
+    headless: false,
     viewport: { width: 1440, height: 720 },
     video: 'retain-on-failure',
     userAgent:
